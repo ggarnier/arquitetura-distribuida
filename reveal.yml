@@ -1,5 +1,8 @@
 ---
 order: manual
 slides:
-- 01-titulo
-- 02-apresentacao
+- titulo
+- apresentacao
+- imagem-globotv
+- webmedia-api
+- arquitetura-original

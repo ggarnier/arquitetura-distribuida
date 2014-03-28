@@ -1,2 +1,0 @@
-## @guilhermgarnier
-## blog.guilhermegarnier.com
