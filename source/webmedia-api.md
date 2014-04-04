@@ -9,7 +9,7 @@ curl http://api.video.globo.com/videos/12345.json
 ```json
 {
   "id": "12345",
-  "title": "Vinagre é aliado dos diabéticos, hipertensos e obesos; veja os benefícios",
+  "title": "Vinagre é aliado dos diabéticos, hipertensos e obesos",
   "description": "Especialista explica como ele atua no corpo",
   "channel_id": 930,
   "program_id": 254,
