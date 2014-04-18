@@ -102,7 +102,7 @@ curl http://api.video.globo.com/videos/12345.json
 
       <section data-markdown>
         <script type="text/template">
-          ## Arquitetura original
+          ## Arquitetura original (2012)
 
 ### globotv
   - home
@@ -208,11 +208,59 @@ curl http://api.video.globo.com/videos/12345.json
 
 ## 2 times
 
-### Reuniões independentes
+- Reuniões independentes
+- 1 PO
+- 1 SM
 
-### 1 PO
+        </script>
+      </section>
 
-### 1 SM
+      <section data-markdown>
+        <script type="text/template">
+          ## Como gerenciar os projetos?
+
+### merge hell
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Novos projetos
+
+- globotv
+- catalogo
+- globotv-eventos <!-- .element: class="fragment" data-fragment-index="1" -->
+- globotv-vod <!-- .element: class="fragment" data-fragment-index="2" -->
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Como integrar projetos?
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## compartilhamento de banco?
+
+- ++ mais simples
+- -- maior acoplamento entre projetos
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## APIs?
+
+- ++ reduz o escopo de cada domínio
+- ++ deploys menores e mais simples
+- ++ facilita o trabalho com vários times
+- -- algumas alterações podem exigir vários deploys
 
         </script>
       </section>
