@@ -4,4 +4,4 @@
 
 - componentes padronizados
 - documentação
-- correção de bugs
+- facilita correção de bugs

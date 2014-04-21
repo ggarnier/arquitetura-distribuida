@@ -71,37 +71,6 @@
 
       <section data-markdown>
         <script type="text/template">
-          ## Acesso aos vídeos
-
-### Webmedia API
-
-```sh
-curl http://api.video.globo.com/videos/12345.json
-```
-
-```json
-{
-  "id": "12345",
-  "title": "Vinagre é aliado dos diabéticos, hipertensos e obesos",
-  "description": "Especialista explica como ele atua no corpo",
-  "channel_id": 930,
-  "program_id": 254,
-  "created_at": "2014-03-19T17:03:34-03:00",
-  "duration": 231865,
-  "hits": 24387,
-  "category": "Entretenimento",
-  "cut_format": "trecho",
-  "adult": false,
-  "hd_available": false,
-  "subscriber_only": false
-}
-```
-
-        </script>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
           ## Arquitetura original (2012)
 
 ### globotv
@@ -129,10 +98,8 @@ curl http://api.video.globo.com/videos/12345.json
   - UFC
   - Futebol
   - Olimpíadas de inverno
-  - Canais Globosat
-
-- Acervo Combate
-  - UFC
+- Acervo Combate/UFC
+- Canais Globosat
 
         </script>
       </section>
@@ -152,74 +119,10 @@ curl http://api.video.globo.com/videos/12345.json
 
       <section data-markdown>
         <script type="text/template">
-          # 1 PO
-
-# 1 SM
-
-# 2 designers
-
-# 2 arquitetos
-
-        </script>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
-          # 14 pessoas!
-
-### Daily meeting <!-- .element: class="fragment" data-fragment-index="1" -->
-### Review <!-- .element: class="fragment" data-fragment-index="2" -->
-### Retrospectiva <!-- .element: class="fragment" data-fragment-index="3" -->
-
-        </script>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
           # Dividir para conquistar
 
-        </script>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
-          ## 2013
-
-## 2 times
-
-<!-- colocar em 2 colunas -->
-
-- globotv 1
-  - 4 devs
-  - 1 designer
-  - 1 arquiteto
-
-- globotv 2
-  - 3 devs
-  - 1 designer
-  - 1 arquiteto
-
-        </script>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
-          ## 2013
-
-## 2 times
-
-- Reuniões independentes
-- 1 PO
-- 1 SM
-
-        </script>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
-          ## Como gerenciar os projetos?
-
-### merge hell
+- Dividir os projetos
+- Dividir o time
 
         </script>
       </section>
@@ -258,97 +161,7 @@ curl http://api.video.globo.com/videos/12345.json
           ## Criar APIs internas
 
 - ++ reduz o escopo de cada domínio
-- ++ deploys menores e mais simples
-- ++ facilita o trabalho com vários times
-- -- algumas alterações podem exigir vários deploys
-
-        </script>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
-          ## API de eventos ao vivo
-
-```sh
-curl http://eventos.video.globo.com/api/eventos-ao-vivo.json
-```
-
-```json
-[
-  {
-    "id": "12345",
-    "titulo": "UFC 172",
-    "data": "2014-04-26",
-    "url": "http://globotv.globo.com/combate/ufc/ufc-172/ao-vivo/"
-  }
-]
-```
-
-        </script>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
-          ## API de eventos ao vivo
-
-```sh
-curl http://eventos.video.globo.com/api/eventos-ao-vivo.json
-```
-
-```json
-[
-  {
-    "id": "12345",
-    "titulo": "UFC 172",
-    "data": "26042014",
-    "url": "http://globotv.globo.com/combate/ufc/ufc-172/ao-vivo/"
-  }
-]
-```
-
-        </script>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
-          ## Versionamento de APIs
-
-```sh
-curl http://eventos.video.globo.com/api/v1/eventos-ao-vivo.json
-```
-
-```json
-[
-  {
-    "id": "12345",
-    "titulo": "UFC 172",
-    "data": "2014-04-26",
-    "url": "http://globotv.globo.com/combate/ufc/ufc-172/ao-vivo/"
-  }
-]
-```
-
-        </script>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
-          ## Versionamento de APIs
-
-```sh
-curl http://eventos.video.globo.com/api/v2/eventos-ao-vivo.json
-```
-
-```json
-[
-  {
-    "id": "12345",
-    "titulo": "UFC 172",
-    "data": "26042014",
-    "url": "http://globotv.globo.com/combate/ufc/ufc-172/ao-vivo/"
-  }
-]
-```
+- ++ facilita atualizações (versionamento de APIs)
 
         </script>
       </section>
@@ -377,7 +190,7 @@ curl http://eventos.video.globo.com/api/v2/eventos-ao-vivo.json
 
 - componentes padronizados
 - documentação
-- correção de bugs
+- facilita correção de bugs
 
         </script>
       </section>
@@ -414,15 +227,6 @@ curl http://eventos.video.globo.com/api/v2/eventos-ao-vivo.json
 
       <section data-markdown>
         <script type="text/template">
-          ## Facilita o trabalho de diversos times simultaneamente
-
-- Menos devs commitando no mesmo projeto == menos merges!
-
-        </script>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
           # Problemas com a arquitetura distribuída
 
         </script>
@@ -444,6 +248,74 @@ curl http://eventos.video.globo.com/api/v2/eventos-ao-vivo.json
 
 - Ex: atualização de header, correção de bugs
 - Exigem deploys de todos os projetos
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Dividindo o time
+
+### 2012: 4 devs, 1 time
+
+### 2013: 7 devs, 2 times
+
+### 2014: 8 devs, 3 times
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## cada time focando em um projeto
+
+## reuniões menores e mais objetivas
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Como integrar os times?
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Comunicação!
+
+- times fisicamente próximos
+- documentação das APIs e projetos
+- lista de emails única
+- reuniões de review em sequencia
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Referência
+
+## Spotify engineering culture
+
+http://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Estamos contratando!
+
+https://github.com/globocom/IWantToWorkAtGloboCom/
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Obrigado!
 
         </script>
       </section>

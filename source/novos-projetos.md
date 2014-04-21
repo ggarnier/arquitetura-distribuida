@@ -5,7 +5,5 @@
   - UFC
   - Futebol
   - Olimpíadas de inverno
-  - Canais Globosat
-
-- Acervo Combate
-  - UFC
+- Acervo Combate/UFC
+- Canais Globosat
