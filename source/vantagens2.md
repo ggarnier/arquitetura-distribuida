@@ -3,5 +3,5 @@
 - Menos código
 - Menos testes
 - Menos dependências
-- CI roda mais rápido
-- Facilita ao trackear bugs ou atualizar dependências
+- build mais rápido
+- Facilita ao corrigir bugs ou atualizar dependências
