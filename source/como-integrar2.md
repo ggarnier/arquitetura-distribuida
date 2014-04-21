@@ -1,4 +1,4 @@
-## compartilhamento de banco
+## Compartilhamento de banco
 
 ![compartilhamento](images/compartilhamento-de-banco.png)
 

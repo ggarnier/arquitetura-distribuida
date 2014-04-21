@@ -1,1 +1,1 @@
-# Como manter a consistência visual entre projetos?
+# Como manter consistência visual entre projetos?
