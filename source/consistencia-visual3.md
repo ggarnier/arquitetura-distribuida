@@ -1,7 +1,3 @@
-# globotv-ui
+# Criação de componentes
 
-## mais um projeto!
-
-- componentes padronizados
-- documentação
-- facilita correção de bugs
+# (HTML, CSS, JS)

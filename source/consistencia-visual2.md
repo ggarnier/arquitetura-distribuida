@@ -1,3 +1,3 @@
-# Criação de componentes
+![busca](images/busca.png)
 
-# (HTML, CSS, JS)
+![trilho](images/trilho.png)

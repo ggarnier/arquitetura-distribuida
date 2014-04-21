@@ -3,7 +3,6 @@
 - Transmissões ao vivo
   - BBB
   - UFC
-  - Futebol
+  - Campeonato Brasileiro e estaduais
   - Olimpíadas de inverno
 - Acervo Combate/UFC
-- Canais Globosat

@@ -1,14 +1,2 @@
-## Arquitetura original (2012)
-
-### globotv
-  - home
-  - páginas de canais e íntegras
-  - busca
-  - admin
-
-### catálogo
-  - páginas de programas
-  - páginas de vídeos
-
-### Webmedia API
-  - acesso aos metadados dos vídeos
+## Arquitetura original do globotv (2011/2012)
+![arquitetura](images/arquitetura-original.png)
