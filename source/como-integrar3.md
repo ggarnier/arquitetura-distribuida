@@ -1,4 +1,4 @@
-## Criar APIs internas?
+## Criar APIs internas
 
 - ++ reduz o escopo de cada domínio
 - ++ deploys menores e mais simples

@@ -1,7 +1,7 @@
-## API de eventos ao vivo
+## Versionamento de APIs
 
 ```sh
-curl http://eventos.video.globo.com/api/eventos-ao-vivo.json
+curl http://eventos.video.globo.com/api/v1/eventos-ao-vivo.json
 ```
 
 ```json

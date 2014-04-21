@@ -245,7 +245,7 @@ curl http://api.video.globo.com/videos/12345.json
 
       <section data-markdown>
         <script type="text/template">
-          ## compartilhamento de banco?
+          ## compartilhamento de banco
 
 - ++ mais simples
 - -- maior acoplamento entre projetos
@@ -255,12 +255,175 @@ curl http://api.video.globo.com/videos/12345.json
 
       <section data-markdown>
         <script type="text/template">
-          ## APIs?
+          ## Criar APIs internas
 
 - ++ reduz o escopo de cada domínio
 - ++ deploys menores e mais simples
 - ++ facilita o trabalho com vários times
 - -- algumas alterações podem exigir vários deploys
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## API de eventos ao vivo
+
+```sh
+curl http://eventos.video.globo.com/api/eventos-ao-vivo.json
+```
+
+```json
+[
+  {
+    "id": "12345",
+    "titulo": "UFC 172",
+    "data": "2014-04-26",
+    "url": "http://globotv.globo.com/combate/ufc/ufc-172/ao-vivo/"
+  }
+]
+```
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## API de eventos ao vivo
+
+```sh
+curl http://eventos.video.globo.com/api/eventos-ao-vivo.json
+```
+
+```json
+[
+  {
+    "id": "12345",
+    "titulo": "UFC 172",
+    "data": "26042014",
+    "url": "http://globotv.globo.com/combate/ufc/ufc-172/ao-vivo/"
+  }
+]
+```
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Versionamento de APIs
+
+```sh
+curl http://eventos.video.globo.com/api/v1/eventos-ao-vivo.json
+```
+
+```json
+[
+  {
+    "id": "12345",
+    "titulo": "UFC 172",
+    "data": "2014-04-26",
+    "url": "http://globotv.globo.com/combate/ufc/ufc-172/ao-vivo/"
+  }
+]
+```
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Versionamento de APIs
+
+```sh
+curl http://eventos.video.globo.com/api/v2/eventos-ao-vivo.json
+```
+
+```json
+[
+  {
+    "id": "12345",
+    "titulo": "UFC 172",
+    "data": "26042014",
+    "url": "http://globotv.globo.com/combate/ufc/ufc-172/ao-vivo/"
+  }
+]
+```
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Como manter a consistência visual entre projetos?
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Criação de componentes
+
+# (HTML, CSS, JS)
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # globotv-ui
+
+## mais um projeto!
+
+- componentes padronizados
+- documentação
+- correção de bugs
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Vantagens da arquitetura distribuída
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Projetos menores são mais fáceis de gerenciar
+
+- Menos código
+- Menos testes
+- Menos dependências
+- CI roda mais rápido
+- Facilita ao trackear bugs ou atualizar dependências
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Deploys menores
+
+- Mais rápidos
+- Menos riscos
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Facilita o trabalho de diversos times simultaneamente
+
+- Menos devs commitando no mesmo projeto == menos merges!
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Problemas com a arquitetura distribuída
 
         </script>
       </section>
