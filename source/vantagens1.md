@@ -1,1 +1,0 @@
-# Vantagens da arquitetura distribuída
