@@ -1,5 +1,5 @@
 ![eu](images/eu.jpg)
 
-[@guilhermgarnier](http://twitter.com/guilhermgarnier)
+[@gpgarnier](http://twitter.com/gpgarnier)
 
 [blog.guilhermegarnier.com](http://blog.guilhermegarnier.com)
